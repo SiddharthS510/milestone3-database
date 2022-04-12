@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* To set the background image */
+
+body, html {
+  height: 100%;
+}
+
+body { 
+  /* The image used */
+  /* background-image: url("./assets/Book.jpg"); */
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* To set the navbar color */
+/* change the background color */
+#colour{
+  background-color: #725b53;
+}
+
+#header-colour {  
+  background-color: #a1887f;
+}
+
+#card-colour{
+  background-color: #d3b8ae;
+}
+
+#btn{
+  background-color: white;
+  /* background-color: #a1887f; */
+}
+
+#navLinks{
+  border: 0px;
+  color: black;
+}
+
+
+/* viewbooks component */
+
+.allbooks-table{
+  max-height: 450px;
+  overflow: auto;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
+
+/* authorbook, genrebooks */
+.max-lines-2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    max-height: 32;       /* fallback */
+}
